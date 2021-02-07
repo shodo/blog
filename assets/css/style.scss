@@ -3,15 +3,45 @@
 
 @import "{{ site.theme }}";
 
-$foreground-color: #bbbbbb;
+$foreground-color: #dddddd;
+$titles-color: #ffffff;
+
+
+@font-face {
+    font-family: Roboto;
+    src: url("Roboto-Regular.ttf") format('truetype');
+}
 
 body {
     background: #2d2d2d;
-    color: $foreground-color
+    color: $foreground-color;
+    font: 14px/1.5 Roboto, "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+section #title h1 {
+    font-family: Roboto, 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.wrapper {
+    max-width: 800px;
+}
+
+section  {
+    max-width: 800px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $foreground-color
+    color: $titles-color;
+    font-family: Roboto, 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 1.4;
+}
+h3 {
+    font-size: 24px;
 }
 
 section #title h1 {
@@ -19,5 +49,37 @@ section #title h1 {
 }
 
 a {
+
     color: #3faef1;
 }
+
+.button {
+    display: block;
+    width: 100px;
+    height: 20px;
+    background: #3f88f1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px;
+    color: white;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.title {
+    font-size: 52px;
+    line-height: 52px;
+}
+
+ul {
+    list-style: none;
+  }
+  
+  ul li::before {
+    content: "\2022";
+    color: #BBBBBB;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
