@@ -39,6 +39,12 @@
           <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
         </div>
 
+        {% if page.title != "ILogger" %}
+        <h1><a href="#">{{ page.title }}</a></h1>
+        <p class="author">
+          <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
+        </p>
+        {% endif %}
         {{ content }}
 
       </section>
