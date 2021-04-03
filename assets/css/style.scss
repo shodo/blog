@@ -47,13 +47,18 @@ a {
     display: block;
     width: 100px;
     height: 20px;
-    background: #3faef1;
+    background: #3f88f1;
     padding: 10px;
     text-align: center;
     border-radius: 0px;
     color: white;
     font-weight: bold;
     line-height: 20px;
+}
+
+.title {
+    font-size: 52px;
+    line-height: 52px;
 }
 
 ul {
