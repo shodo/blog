@@ -12,7 +12,7 @@ title: ILogger
   <div class="content">
     {{ post.content | split:'<!--more-->' | first }}
     {% if post.content contains '<!--more-->' %}
-      <br /><a href="{{ post.url | prepend: site.baseurl }}">--> Read More</a>
+    <br /><br /><a href="{{ post.url | prepend: site.baseurl }}" class="button">Read More</a>
     {% endif %}
   </div>
 {% endfor %}
